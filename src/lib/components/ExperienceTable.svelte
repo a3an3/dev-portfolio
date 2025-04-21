@@ -1,14 +1,13 @@
 <script lang="ts">
-	import type { SanityWorkExperience } from '$lib/types/sanity';
 
 	interface AboutMeProps {
-		workExperience: DevExperience[];
+		workExperience: SanityWorkExperience[];
 	}
 
 	let { workExperience }: AboutMeProps = $props();
 </script>
 
-<section class="default-margin work-experience mt-m">
+<section class="default-margin work-experience mt-l">
 	<ul class="work-experience-list">
 		{#each workExperience as job}
 			<li class="work-item">

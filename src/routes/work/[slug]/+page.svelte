@@ -11,7 +11,6 @@
 		}
 	}
 
-	$inspect(data);
 </script>
 
 

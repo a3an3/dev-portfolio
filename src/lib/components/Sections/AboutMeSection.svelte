@@ -1,11 +1,10 @@
 <script lang="ts">
 	import { Button, ExperienceTable, SectionHeadline } from '$components';
-	import image from '$assets/profile_picture_2.jpeg';
+	import image from '$assets/profile_picture_3.jpeg';
 	import { goto } from '$app/navigation';
-	import type { SanityWorkExperience } from '$lib/types/sanity';
 
 	interface AboutMeProps {
-		workExperience: DevExperience[];
+		workExperience: SanityWorkExperience[];
 	}
 
 	let { workExperience }: AboutMeProps = $props();
