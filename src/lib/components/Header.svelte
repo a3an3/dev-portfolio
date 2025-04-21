@@ -3,14 +3,14 @@
 	import { Button } from '$components/index';
 
 	function goToContactForm() {
-		goto('#contact-form');
+		goto('/#contact-form');
 	}
 </script>
 
 <nav class="navbar default-margin">
 	<a href="/" class="logo">AS</a>
 	<div class="navbar-links">
-		<a href="/#about-me" class="nav-link">About Me</a>
+		<a href="/#about-me" class="nav-link" on:click={goToContactForm}>About Me</a>
 		<a href="/#my-work" class="nav-link">My Work</a>
 		<Button className="nav-bar" onclick={goToContactForm}>Contact</Button>
 	</div>

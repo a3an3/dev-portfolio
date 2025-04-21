@@ -47,7 +47,7 @@
 		{#if isEmailSent}
 			<div class="from-style">
 				<h3>Thank you for getting in contact with me.</h3>
-				<h3>I'll usually replay in 48 hours</h3>
+				<h3>I'll usually reply in 48 hours</h3>
 			</div>
 		{:else if isLoading}
 			<div class="spinner-container">

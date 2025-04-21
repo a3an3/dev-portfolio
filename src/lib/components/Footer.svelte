@@ -4,15 +4,15 @@
 
 		<div class="mb-l link-list">
 			<div class="footer-link">
-				<a href="https://github.com/adrian-setka"
+				<a href="https://github.com/a3an3"
 					 target="_blank"><i class="devicon-github-original"></i> GitHub</a>
 			</div>
 			<div class="footer-link">
-				<a href="https://linkedin.com/adrian-setka"
+				<a href="https://www.linkedin.com/in/adrian-setka-402535164/"
 					 target="_blank"> <i class="devicon-linkedin-plain"></i> LinkedIn</a>
 			</div>
 			<div class="footer-link">
-				<a href="https://twitter.com/adrian-setka"
+				<a href="https://x.com/adrian-setka"
 					 target="_blank"> <i class="devicon-twitter-original"></i> Twitter</a>
 			</div>
 		</div>

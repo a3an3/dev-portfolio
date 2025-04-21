@@ -21,22 +21,25 @@
 		<div class="description">
 			<div class="text">
 				<p>
-					Hey, I'm Adrian, the driving force behind my freelancing agency specializing in web development and data
-					science.
+					Hey, I'm Adrian, a dedicated web developer with a strong focus on delivering modern, efficient, and
+					scalable solutions using a wide range of tools.
 				</p>
 				<p>
-					With years of hands-on experience tackling real-world coding challenges and meeting diverse client needs, I've
-					built a deep understanding of the tech landscape. But beyond coding, my true passion lies in teaching. I've
-					had
-					the privilege of guiding hundreds of aspiring developers, focusing on making coding both practical and
-					accessible.
-					My goal is to translate complex concepts into actionable skills that you can apply right away.
+					Over the past several years, I’ve worked on a wide range of web projects — from dynamic landing pages and
+					responsive websites to full-fledged SaaS platforms. My experience spans both frontend and backend development,
+					allowing me to create seamless and integrated systems tailored to client needs.
+
+					I specialize in helping businesses and individuals establish a strong online presence or launch powerful,
+					cloud-hosted applications. My workflow emphasizes clean code, fast delivery, and ongoing adaptability —
+					perfect for clients who need results without the wait.
 				</p>
 				<p>
-					Through my courses, I'm committed to sharing the insights and lessons I've learned in the field, so you can
-					skip
-					the pitfalls and fast-track your development journey. If you're eager to learn from real-world experience and
-					practical know-how, let's dive in together.
+					Outside of my professional work, I have a deep passion for game development. In my spare time, I dive into
+					creating games, constantly exploring new techniques in design, gameplay mechanics, and immersive storytelling.
+				</p>
+				<p>
+					If you're looking for a developer who can build your website or web system quickly and professionally, while
+					bringing creativity and technical depth to the table — let's connect.
 				</p>
 			</div>
 			<div class="button-wrapper">
@@ -67,7 +70,7 @@
 
     .text {
         max-height: 450px;
-        overflow-y: scroll;
+        overflow-y: auto;
         text-align: left;
     }
 

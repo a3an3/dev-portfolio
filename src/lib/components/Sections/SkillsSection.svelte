@@ -2,7 +2,7 @@
 	import { SectionHeadline } from '$components';
 
 	interface SkillsSectionProps {
-		skills: Skills[];
+		skills: Skill[];
 	}
 
 	let { skills }: SkillsSectionProps = $props();
@@ -27,7 +27,7 @@
     }
 
     .skills-container {
-        width: 40%;
+        width: 50%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -38,5 +38,12 @@
     i {
         font-size: 80px;
         color: #5e5e5e;
+        transition: transform 0.5s ease, color 0.5s ease;
+    }
+
+    i:hover {
+        transform: scale(1.3) translateZ(10px);
+        z-index: 100;
+        color: black; /* or any color you like */
     }
 </style>

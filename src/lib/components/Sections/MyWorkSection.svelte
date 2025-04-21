@@ -36,7 +36,7 @@
 							<h3 class="semi-bold">{project.name}</h3>
 							<p class="company dark-grey">{project.company}</p>
 						</div>
-						<a href={`work/${project.slug}`} class="btn-to-article">→</a>
+						<a href={`work/${project.slug}`} data-sveltekit-noscroll class="btn-to-article">→</a>
 					</div>
 				</article>
 			{/each}
