@@ -1,41 +1,6 @@
 <script lang="ts">
-	import { goto, pushState, afterNavigate } from '$app/navigation';
 	import { Button } from '$components/index';
-
-	function smoothScrollTo(event: MouseEvent) {
-		event.preventDefault();
-
-		const target = event.currentTarget as HTMLElement;
-		const href = target.getAttribute('href') || target.getAttribute('scrollTarget');
-
-		if (!href) return;
-
-		const id = href.split('#')[1];
-		const el = document.getElementById(id);
-
-		if (el) {
-			el.scrollIntoView({ behavior: 'smooth' });
-			pushState(href, {});
-		} else {
-			goto(href); // fallback if element isn't on the same page
-		}
-	}
-
-	afterNavigate(() => {
-		const hash = window.location.hash;
-
-		if (hash) {
-			const el = document.querySelector(hash);
-			if (el) {
-				// small timeout lets the DOM settle (especially useful with transitions or lazy content)
-				setTimeout(() => {
-					el.scrollIntoView({ behavior: 'smooth' });
-				}, 0);
-			}
-		} else {
-			window.scrollTo({ top: 0, behavior: 'smooth' });
-		}
-	});
+	import { smoothScrollTo } from '$lib/utils/navigation';
 </script>
 
 <nav class="navbar default-margin">

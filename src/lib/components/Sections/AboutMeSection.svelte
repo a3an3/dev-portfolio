@@ -1,17 +1,13 @@
 <script lang="ts">
 	import { Button, ExperienceTable, SectionHeadline } from '$components';
 	import image from '$assets/profile_picture_3.jpeg';
-	import { goto } from '$app/navigation';
+	import { smoothScrollTo } from '$lib/utils/navigation';
 
 	interface AboutMeProps {
 		workExperience: SanityWorkExperience[];
 	}
 
 	let { workExperience }: AboutMeProps = $props();
-
-	function onclick() {
-		goto('/#contact-form');
-	}
 </script>
 
 <section class="about-me mt-l">
@@ -42,7 +38,8 @@
 				</p>
 			</div>
 			<div class="button-wrapper">
-				<Button className="mt-m" {onclick}>Tell me about your project</Button>
+				<Button className="mt-m" scrollTarget="/#contact-form" onclick={smoothScrollTo}>Tell me about your project
+				</Button>
 			</div>
 		</div>
 	</div>
