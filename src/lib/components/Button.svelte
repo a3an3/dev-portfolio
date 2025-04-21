@@ -3,6 +3,7 @@
 
 	interface ButtonProps {
 		children: Snippet;
+		scrollTarget: string;
 		onclick: ((e: MouseEvent) => void) | (() => void);
 		className?: string;
 	}

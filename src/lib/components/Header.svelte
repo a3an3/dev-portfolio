@@ -1,18 +1,49 @@
 <script lang="ts">
-	import { goto } from '$app/navigation';
+	import { goto, pushState, afterNavigate } from '$app/navigation';
 	import { Button } from '$components/index';
 
-	function goToContactForm() {
-		goto('/#contact-form');
+	function smoothScrollTo(event: MouseEvent) {
+		event.preventDefault();
+
+		const target = event.currentTarget as HTMLElement;
+		const href = target.getAttribute('href') || target.getAttribute('scrollTarget');
+
+		if (!href) return;
+
+		const id = href.split('#')[1];
+		const el = document.getElementById(id);
+
+		if (el) {
+			el.scrollIntoView({ behavior: 'smooth' });
+			pushState(href, {});
+		} else {
+			goto(href); // fallback if element isn't on the same page
+		}
 	}
+
+	afterNavigate(() => {
+		const hash = window.location.hash;
+
+		if (hash) {
+			const el = document.querySelector(hash);
+			if (el) {
+				// small timeout lets the DOM settle (especially useful with transitions or lazy content)
+				setTimeout(() => {
+					el.scrollIntoView({ behavior: 'smooth' });
+				}, 0);
+			}
+		} else {
+			window.scrollTo({ top: 0, behavior: 'smooth' });
+		}
+	});
 </script>
 
 <nav class="navbar default-margin">
 	<a href="/" class="logo">AS</a>
 	<div class="navbar-links">
-		<a href="/#about-me" class="nav-link" on:click={goToContactForm}>About Me</a>
-		<a href="/#my-work" class="nav-link">My Work</a>
-		<Button className="nav-bar" onclick={goToContactForm}>Contact</Button>
+		<a href="/#about-me" class="nav-link" on:click={smoothScrollTo}>About Me</a>
+		<a href="/#my-work" class="nav-link" on:click={smoothScrollTo}>My Work</a>
+		<Button className="nav-bar" scrollTarget="/#contact-form" onclick={smoothScrollTo}>Contact</Button>
 	</div>
 </nav>
 
@@ -36,7 +67,7 @@
         gap: 60px;
     }
 
-    .navbar-links:hover {
+    .nav-link:hover {
         text-decoration: underline;
     }
 
