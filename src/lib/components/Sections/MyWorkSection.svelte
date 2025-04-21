@@ -90,4 +90,16 @@
         font-size: 18px;
         margin-bottom: 0;
     }
+
+    @media (max-width: 768px) {
+        .btn-to-article {
+            border-radius: 15px;
+            padding: 0 5px;
+        }
+
+        .company {
+            font-size: 15px;
+        }
+    }
+
 </style>

@@ -71,4 +71,10 @@
         text-decoration: underline;
     }
 
+    @media (max-width: 768px) {
+        .navbar-links {
+            gap: 20px;
+        }
+    }
+
 </style>

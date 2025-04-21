@@ -46,4 +46,10 @@
         z-index: 100;
         color: black; /* or any color you like */
     }
+
+    @media (max-width: 768px) {
+        i {
+            font-size: 40px;
+        }
+    }
 </style>

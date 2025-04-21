@@ -30,8 +30,7 @@
 					allowing me to create seamless and integrated systems tailored to client needs.
 
 					I specialize in helping businesses and individuals establish a strong online presence or launch powerful,
-					cloud-hosted applications. My workflow emphasizes clean code, fast delivery, and ongoing adaptability —
-					perfect for clients who need results without the wait.
+					cloud-hosted applications.
 				</p>
 				<p>
 					Outside of my professional work, I have a deep passion for game development. In my spare time, I dive into

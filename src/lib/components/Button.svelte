@@ -30,4 +30,11 @@
         padding: 10px 24px;
         font-size: 20px;
     }
+
+    @media (max-width: 768px) {
+        .btn {
+            font-size: 18px;
+            padding: 14px 20px;
+        }
+    }
 </style>
