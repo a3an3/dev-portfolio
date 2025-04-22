@@ -52,6 +52,11 @@
         border-radius: 20px;
         object-fit: cover;
         cursor: pointer;
+        transition: transform 0.5s ease;
+    }
+
+    img:hover {
+        transform: scale(1.05) translateZ(10px);
     }
 
     .more-projects-container {
