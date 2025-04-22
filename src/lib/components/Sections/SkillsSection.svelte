@@ -6,6 +6,7 @@
 	}
 
 	let { skills }: SkillsSectionProps = $props();
+
 </script>
 
 <section class="mt-l">
@@ -37,14 +38,21 @@
 
     i {
         font-size: 80px;
-        color: #5e5e5e;
-        transition: transform 0.5s ease, color 0.5s ease;
+        transition: transform 0.5s ease;
+    }
+
+    i::before {
+        color: black !important;
+        transition: color 0.5s ease;
+    }
+
+    /* On hover: remove override to reveal original */
+    i:hover::before {
+        color: unset !important;
     }
 
     i:hover {
         transform: scale(1.3) translateZ(10px);
-        z-index: 100;
-        color: black; /* or any color you like */
     }
 
     @media (max-width: 768px) {
