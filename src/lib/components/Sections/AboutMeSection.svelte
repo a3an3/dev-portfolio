@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { Button, ExperienceTable, SectionHeadline } from '$components';
-	import image from '$assets/profile_picture_3.jpeg';
+	import image from '$assets/adrian-setka.jpg';
 	import { smoothScrollTo } from '$lib/utils/navigation';
 
 	interface AboutMeProps {
@@ -13,33 +13,31 @@
 <section class="about-me mt-l">
 	<SectionHeadline sectionName={"about-me"}>About Me</SectionHeadline>
 	<div class="mt-m content-container default-margin">
-		<img class="image" src={image} alt="" />
+		<img class="image" src={image} alt="Adrian Setka" />
 		<div class="description">
 			<div class="text">
 				<p>
-					Hey, I'm Adrian, a dedicated web developer with a strong focus on delivering modern, efficient, and
-					scalable solutions using a wide range of tools.
+					Hey, I'm Adrian, a full-stack engineer based in Berlin with more than four years of fully remote work.
+					I mostly build with TypeScript, from Svelte and Angular frontends to Node.js and Kotlin backends, and I
+					like owning the infrastructure and CI/CD that keep it running.
 				</p>
 				<p>
-					Over the past several years, I’ve worked on a wide range of web projects — from dynamic landing pages and
-					responsive websites to full-fledged SaaS platforms. My experience spans both frontend and backend development,
-					allowing me to create seamless and integrated systems tailored to client needs.
-
-					I specialize in helping businesses and individuals establish a strong online presence or launch powerful,
-					cloud-hosted applications.
+					At Gofore (formerly eMundo) I worked for a German premium automotive OEM. I designed and built a test
+					monitoring web UI that test engineers and product managers used every day, set up the AWS infrastructure
+					for an ML-based HMI test automation platform from scratch and owned its Angular annotation frontend.
 				</p>
 				<p>
-					Outside of my professional work, I have a deep passion for game development. In my spare time, I dive into
-					creating games, constantly exploring new techniques in design, gameplay mechanics, and immersive storytelling.
+					Since January 2026 I have been building ImmoNerd, a multi-tenant SaaS for real estate investors with LLM
+					document processing, Stripe billing and paying customers. I hold an M.Sc. in Physics and Technology for
+					Space Travel Applications (grade 1.4).
 				</p>
 				<p>
-					If you're looking for a developer who can build your website or web system quickly and professionally, while
-					bringing creativity and technical depth to the table — let's connect.
+					I'm looking for a remote role (EU or Germany) or a hybrid one in Berlin or Valencia. If that fits your
+					team, let's talk.
 				</p>
 			</div>
 			<div class="button-wrapper">
-				<Button className="mt-m" scrollTarget="/#contact-form" onclick={smoothScrollTo}>Tell me about your project
-				</Button>
+				<Button className="mt-m" scrollTarget="/#contact-form" onclick={smoothScrollTo}>Get in touch</Button>
 			</div>
 		</div>
 	</div>

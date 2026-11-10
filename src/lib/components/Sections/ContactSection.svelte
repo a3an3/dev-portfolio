@@ -47,7 +47,7 @@
 		{#if isEmailSent}
 			<div class="from-style">
 				<h3>Thank you for getting in contact with me.</h3>
-				<h3>I'll usually reply in 48 hours</h3>
+				<h3>I'll usually reply within 48 hours.</h3>
 			</div>
 		{:else if isLoading}
 			<div class="spinner-container">
@@ -66,17 +66,16 @@
 				<input class="text-input mb-m" class:input-error={isFormInvalid && !Boolean(contactMail.length)}
 							 placeholder="Your Email" bind:value={contactMail} />
 				<textarea class:input-error={isFormInvalid && !Boolean(contactText.length)}
-									placeholder="Tell me more about your project" bind:value={contactText}></textarea>
+									placeholder="Tell me about the role or project" bind:value={contactText}></textarea>
 				<Button onclick={onSubmit}>Submit</Button>
 			</form>
 		{/if}
 		<div class="form-text">
-			<h3 class="semi-bold mb-s">Talk to me about your project!</h3>
+			<h3 class="semi-bold mb-s">Hiring or building something?</h3>
 			<p>
-				I'm always excited to hear about new and innovative ideas! Whether you're in the early stages of planning or
-				have a well-defined project, I'm here to help bring your vision to life. Feel free to drop me a message with
-				some details about your project, and let's start a conversation about how we can work together. I look forward
-				to connecting with you and discussing the possibilities. Talk to you soon!
+				I'm open to full-stack roles, fully remote within the EU or Germany, or hybrid in Berlin or Valencia. I'm
+				based in Berlin (CET) and available at short notice. Send me a few lines about the team and the product, and
+				I'll get back to you.
 			</p>
 		</div>
 	</div>

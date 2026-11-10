@@ -14,7 +14,7 @@
 	<div class="wrapper default-margin">
 		<div class="skills-container mt-m">
 			{#each skills as skill}
-				<i class={skill.iconClass}></i>
+				<i class={skill.iconClass} title={skill.name} aria-label={skill.name}></i>
 			{/each}
 		</div>
 	</div>

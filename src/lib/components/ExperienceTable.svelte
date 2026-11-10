@@ -28,7 +28,7 @@
 			</li>
 		{/each}
 	</ul>
-	<h2 class="headline">Past work <br /> Experience</h2>
+	<h2 class="headline">Work <br /> experience</h2>
 </section>
 
 <style>

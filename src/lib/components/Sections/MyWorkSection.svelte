@@ -6,14 +6,15 @@
 	}
 
 	let { projects }: MyWorkSectionProps = $props();
-	const mainProject = projects[0];
-	const otherProjects = projects.slice(1, 5);
+	let mainProject = $derived(projects[0]);
+	let otherProjects = $derived(projects.slice(1, 5));
 
 </script>
 
 <section class="mt-l">
 	<SectionHeadline sectionName="my-work">My Work</SectionHeadline>
 	<div class="default-margin projects-container mt-m">
+		{#if mainProject}
 		<article class="main-project mb-m">
 			<a href={`/work/${mainProject.slug}`}>
 				<img src={mainProject.projectImageUrl} alt={mainProject.name} />
@@ -23,9 +24,10 @@
 					<h3 class="semi-bold">{mainProject.name}</h3>
 					<p class="company dark-grey">{mainProject.company}</p>
 				</div>
-				<a href={`work/${mainProject.slug}`} class="btn-to-article">→</a>
+				<a href={`/work/${mainProject.slug}`} class="btn-to-article">→</a>
 			</div>
 		</article>
+		{/if}
 		<div class="more-projects-container">
 			{#each otherProjects as project}
 				<article class="project">
@@ -37,7 +39,7 @@
 							<h3 class="semi-bold">{project.name}</h3>
 							<p class="company dark-grey">{project.company}</p>
 						</div>
-						<a href={`work/${project.slug}`} class="btn-to-article">→</a>
+						<a href={`/work/${project.slug}`} class="btn-to-article">→</a>
 					</div>
 				</article>
 			{/each}

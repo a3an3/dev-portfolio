@@ -79,13 +79,13 @@ interface ProcessedProject {
 }
 
 interface ProcessedTextContent {
-	type: text;
+	type: 'text';
 	style: 'normal' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'blockquote';
 	textToRender: string;
 }
 
 interface ProcessedImageContent {
-	type: image;
+	type: 'image';
 	url: string;
 }
 

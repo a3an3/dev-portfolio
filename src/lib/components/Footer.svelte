@@ -12,11 +12,10 @@
 					 target="_blank"> <i class="devicon-linkedin-plain"></i> LinkedIn</a>
 			</div>
 			<div class="footer-link">
-				<a href="https://x.com/adrian-setka"
-					 target="_blank"> <i class="devicon-twitter-original"></i> Twitter</a>
+				<a href="https://immonerd.de" target="_blank">ImmoNerd</a>
 			</div>
 		</div>
-		<p>© 2025 Adrian Setka. All rights reserved.</p>
+		<p>© {new Date().getFullYear()} Adrian Setka. All rights reserved.</p>
 	</div>
 </footer>
 
