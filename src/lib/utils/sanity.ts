@@ -4,7 +4,9 @@ import imageUrlBuilder from '@sanity/image-url';
 const config: ClientConfig = {
 	projectId: 'utoq7rij',
 	dataset: 'production',
-	useCdn: true,
+	// Data is only fetched on the server, so read the live API: the CDN can still
+	// return old content for a moment after a publish, right when a webhook build starts.
+	useCdn: false,
 	apiVersion: '2025-03-12'
 };
 
